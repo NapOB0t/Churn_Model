@@ -138,4 +138,4 @@ def predict_churn(n_clicks, senior_citizen, dependents, tenure, contract, paperl
         return ''
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, use_reloader=False)
