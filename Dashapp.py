@@ -5,10 +5,10 @@ import pandas as pd
 import joblib
 
 # Load the model from disk
-model = joblib.load("notebook\Project2model.sav")
+model = joblib.load("Project2model.sav")
 
 app = dash.Dash(__name__)
-
+server = app.server
 
 app.layout = html.Div(style={'color': 'grey'}, children=[
     html.H1('Telco Customer Churn Prediction Dashboard', style={'color': 'black'}),
